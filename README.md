@@ -6,6 +6,7 @@
 $ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-react-native
 ```
 
+### Remove .eslintrc.js file
 ### Setup eslint
 
 ```
