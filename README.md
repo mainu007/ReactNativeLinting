@@ -62,6 +62,7 @@ eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0
 ### Add prettier to the end of extends section
 
 #### .eslintrc.json
+
 ```
 "extends": [
   ...,
@@ -82,21 +83,25 @@ eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0
 ```
 
 ### Initialized Git
+
 ```
 git init
 ```
 
 ### Install and setup Husky
+
 ```
 yarn add --dev husky
 ```
 
 ### Enable Husky Git hooks
+
 ```
 npx husky install
 ```
 
 ### To add a Husky command
+
 ```
 npx husky add .husky/pre-commit "yarn linter"
 npx husky add .husky/pre-commit "yarn prettier"
