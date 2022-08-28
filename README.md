@@ -77,7 +77,7 @@ eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0
 ```
 "scripts": {
   ...,
-  "linter": "eslint 'src/**/*.{js,jsx}'"
+  "linter": "eslint 'src/**/*.{js,jsx}'",
   "prettier": "prettier --write 'src/**/*.{js,jsx}'"
 },
 ```
