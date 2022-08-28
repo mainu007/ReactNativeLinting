@@ -1,15 +1,17 @@
 # Linting for React Native
 
+### First you remove these files(eslintrc and prettierrc) in root dir
+
 ### Install linting dependencies
 
 ```
-$ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-react-native
+yarn add --dev eslint prettier eslint-config-prettier
 ```
 
 ### Setup eslint
 
 ```
-$ npx eslint --init
+npx eslint --init
 ```
 
 ```bash
@@ -57,25 +59,13 @@ eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0
 ✔ Which package manager do you want to use? · yarn
 ```
 
-### Add react-native to the plugins section
-#### .eslintrc.json
-
-```
-{
-  "plugins": [
-    "react",
-    "react-native"
-  ]
-}
-```
-
 ### Add prettier to the end of extends section
 
 #### .eslintrc.json
 ```
 "extends": [
   ...,
-  "plugin:react-native/all"
+  "prettier"
   ],
 ```
 
@@ -93,21 +83,21 @@ eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0
 
 ### Initialized Git
 ```
-$ git init
+git init
 ```
 
 ### Install and setup Husky
 ```
-$ yarn add --dev husky
+yarn add --dev husky
 ```
 
 ### Enable Husky Git hooks
 ```
-$ npx husky install
+npx husky install
 ```
 
 ### To add a Husky command
 ```
-$ npx husky add .husky/pre-commit "yarn linter"
-$ npx husky add .husky/pre-commit "yarn prettier"
+npx husky add .husky/pre-commit "yarn linter"
+npx husky add .husky/pre-commit "yarn prettier"
 ```
