@@ -5,7 +5,7 @@
 ### Install linting dependencies
 
 ```
-yarn add --dev eslint prettier eslint-config-prettier
+yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-react-native
 ```
 
 ### Setup eslint
@@ -59,14 +59,24 @@ eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0
 ✔ Which package manager do you want to use? · yarn
 ```
 
-### Add prettier to the end of extends section
+### Add prettier and react native plugin to the end of extends section
 
 #### .eslintrc.json
 
 ```
 "extends": [
   ...,
-  "prettier"
+  "prettier",
+  "plugin:react-native/all"
+  ],
+```
+
+### Add react native to the end of plagins
+
+```
+"plugins": [
+  ...,
+  "react-native"
   ],
 ```
 
