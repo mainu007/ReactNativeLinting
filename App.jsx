@@ -1,10 +1,8 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import HelloWorld from './src/HelloWorld';
 
 export default function App() {
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <HelloWorld />
   );
 }
